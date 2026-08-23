@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Compartilhado\Apresentacao\Views\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 

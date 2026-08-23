@@ -1,5 +1,4 @@
-﻿using GestaoEquipamentos.Compartilhado.Infraestrutura.Arquivos;
-using System.Runtime.CompilerServices;
+﻿using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura.Arquivos;
 
 namespace GestaoEquipamentos.Compartilhado.Infraestrutura
 {
@@ -8,15 +7,16 @@ namespace GestaoEquipamentos.Compartilhado.Infraestrutura
 
         public static void AdicionarCamadaDeInfraestrutura(this IServiceCollection services)
         {
-            // Razor = CSHTML
-            services.AddControllersWithViews().AddRazorOptions(options =>
+            services.AddScoped(services =>
             {
-                // Rseta o mecanismo de buca de views
-                options.ViewLocationFormats.Clear();
+                ContextoJson contexto = new ContextoJson();
+                contexto.Carregar();
+                return contexto;
 
 
             });
 
+            // Configurar rep
 
         }
 

@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Modulos\Fabricantes\Apresentacao\Views\" />
-    <Folder Include="Modulos\Fabricantes\Infraestrutura\" />
   </ItemGroup>
 
 </Project>

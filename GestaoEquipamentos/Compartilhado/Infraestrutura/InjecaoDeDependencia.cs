@@ -1,4 +1,5 @@
 ﻿using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura.Arquivos;
+using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Infraestrutura;
 
 namespace GestaoEquipamentos.Compartilhado.Infraestrutura
 {
@@ -17,6 +18,7 @@ namespace GestaoEquipamentos.Compartilhado.Infraestrutura
             });
 
             // Configurar rep
+            services.AddScoped<RepositorioFabricanteEmArquivo>();
 
         }
 

@@ -6,8 +6,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Modulos\Fabricantes\Apresentacao\Views\" />
-  </ItemGroup>
-
 </Project>

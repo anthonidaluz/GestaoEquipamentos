@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Modulos\Equipamentos\Apresentacao\Views\" />
+    <Folder Include="Modulos\Equipamentos\Dominio\" />
+    <Folder Include="Modulos\Equipamentos\Infraestrutura\" />
+  </ItemGroup>
+
 </Project>

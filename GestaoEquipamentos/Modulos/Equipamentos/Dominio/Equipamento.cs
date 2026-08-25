@@ -10,6 +10,18 @@ namespace GestaoEquipamentos.Modulos.Equipamentos.Dominio
         public DateTime DataFabricacao { get; set; }
         public Fabricante Fabricante { get; set; } = null!;
 
+        public Equipamento(string nome, decimal precoAquisicao, DateTime dataFabricacao, Fabricante fabricante)
+        {
+            Nome = nome;
+            PrecoAquisicao = precoAquisicao;
+            DataFabricacao = dataFabricacao;
+            Fabricante = fabricante;
+        }
+
+        public Equipamento()
+        {
+        }
+
         public override void Atualizar(EntidadeBase entidadeAtualizada)
         {
             Equipamento equipamentoAtualizado = (Equipamento)entidadeAtualizada;

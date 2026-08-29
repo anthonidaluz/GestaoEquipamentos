@@ -1,30 +1,21 @@
+using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura;
 using GestaoEquipamentos.Compartilhado.Apresentacao;
-using GestaoEquipamentos.Compartilhado.Infraestrutura;
 
-namespace GestaoEquipamentos
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
-            // Configurar a infra (banco de dados, logs, arquivos etc..)
-            builder.Services.AdicionarCamadaDeInfraestrutura();
+// Configurar a infraestrutura (Arquivos, Banco de Dados, Logs, Cachês, etc...)
+builder.Services.AdicionarCamadaDeInfraestrutura();
 
-            // Configurar o MVC / Apresentacao
-            builder.Services.AdicionarCamadaDeApresentacao();
+// Configurar o MVC / Apresentação
+builder.Services.AdicionarCamadaDeApresentacao();
 
-            var app = builder.Build();
+var app = builder.Build();
 
-            //Middlewares
-            app.UseRouting();
-            app.MapDefaultControllerRoute();
+// Middlewares
+app.UseRouting();
+app.MapDefaultControllerRoute();
 
-            app.UseStaticFiles();
+app.UseStaticFiles();
 
-            // Executa o servidor
-            app.Run();
-        }
-    }
-}
+// Executa o servidor
+app.Run();

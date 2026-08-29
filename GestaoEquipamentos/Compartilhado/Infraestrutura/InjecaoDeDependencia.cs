@@ -1,26 +1,24 @@
 ﻿using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura.Arquivos;
 using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Infraestrutura;
+using GestaoEquipamentos.Modulos.Equipamentos.Infraestrutura;
 
-namespace GestaoEquipamentos.Compartilhado.Infraestrutura
+namespace GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura;
+
+public static class InjecaoDeDependencia
 {
-    public static class InjecaoDeDependencia
+    public static void AdicionarCamadaDeInfraestrutura(this IServiceCollection services)
     {
-
-        public static void AdicionarCamadaDeInfraestrutura(this IServiceCollection services)
+        services.AddScoped(services =>
         {
-            services.AddScoped(services =>
-            {
-                ContextoJson contexto = new ContextoJson();
-                contexto.Carregar();
-                return contexto;
+            ContextoJson contexto = new ContextoJson();
 
+            contexto.Carregar();
 
-            });
+            return contexto;
+        });
 
-            // Configurar rep
-            services.AddScoped<RepositorioFabricanteEmArquivo>();
-
-        }
-
+        // Configurar repositórios
+        services.AddScoped<RepositorioFabricanteEmArquivo>();
+        services.AddScoped<RepositorioEquipamentoEmArquivo>();
     }
 }

@@ -86,10 +86,34 @@ public sealed class ContextoJson
 
         contextoPredefinido.Equipamentos.AddRange(new List<Equipamento>
         {
-        new ("Notebook Dell", 3000m, DateTime.Parse("10/02/2023"), contextoPredefinido.Fabricantes[0]) { Id = 1 },
-        new ("Monitor Acer", 600m, DateTime.Parse("09/07/2024"), contextoPredefinido.Fabricantes[0]) { Id = 2 }
+            new ("Notebook Dell", 3000m, DateTime.Parse("10/02/2023"), contextoPredefinido.Fabricantes[0]) { Id = 1 },
+            new ("Monitor Acer", 600m, DateTime.Parse("09/07/2024"), contextoPredefinido.Fabricantes[0]) { Id = 2 }
         });
 
+        contextoPredefinido.Chamados.AddRange(new List<Chamado>
+        {
+            new Chamado(
+                "Tela do notebook piscando",
+                "A tela do notebook apresenta piscadas intermitentes ao mover a tampa. Suspeita de mau contato no cabo flat.",
+                DateTime.Today.AddDays(-5),
+                contextoPredefinido.Equipamentos[0].Id
+            )
+            {
+                Id = 1,
+                Equipamento = contextoPredefinido.Equipamentos[0]
+            },
+
+            new Chamado(
+                "Monitor não liga",
+                "O monitor não apresenta imagem nem LED de energia. Já foram testados outro cabo de força e outra tomada.",
+                DateTime.Today.AddDays(-2),
+                contextoPredefinido.Equipamentos[1].Id
+            )
+            {
+                Id = 2,
+                Equipamento = contextoPredefinido.Equipamentos[1]
+            }
+        });
 
         return contextoPredefinido;
     }
@@ -97,6 +121,7 @@ public sealed class ContextoJson
     private bool PossuiDados()
     {
         return Fabricantes.Count > 0 &&
-            Equipamentos.Count > 0;
+            Equipamentos.Count > 0 &&
+            Chamados.Count > 0;
     }
 }

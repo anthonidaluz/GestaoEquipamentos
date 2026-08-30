@@ -68,6 +68,7 @@ public sealed class ContextoJson
     {
         Fabricantes = contexto.Fabricantes;
         Equipamentos = contexto.Equipamentos;
+        Chamados = contexto.Chamados;
     }
 
     public ContextoJson CarregarDadosPredefinidos()

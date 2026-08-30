@@ -1,4 +1,5 @@
-﻿using GestaoEquipamentos.Modulos.Equipamentos.Dominio;
+﻿using GestaoDeEquipamentos.WebApp.Modulos.Chamados.Dominio;
+using GestaoEquipamentos.Modulos.Equipamentos.Dominio;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -10,6 +11,7 @@ public sealed class ContextoJson
 
     public List<Fabricante> Fabricantes { get; set; } = new List<Fabricante>();
     public List<Equipamento> Equipamentos { get; set; } = new List<Equipamento>();
+    public List<Chamado> Chamados { get; set; } = new List<Chamado>();
 
     public ContextoJson()
     {

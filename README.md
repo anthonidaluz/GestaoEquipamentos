@@ -124,4 +124,4 @@ Como funcionário Junior quer ter a possibilidade de excluir um chamado.
 
 ## Requisitos
 
-- .NET 10.0 SDK<img width="1920" height="891" alt="chrome_7cKfhTh9sE" src="https://github.com/user-attachments/assets/dda413e3-893c-4533-936f-73e33fd7137d" />
+- .NET 10.0 SDK

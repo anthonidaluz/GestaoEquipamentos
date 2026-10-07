@@ -1,8 +1,10 @@
-﻿using GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Apresentacao;
+﻿using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Dominio;
 using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Infraestrutura;
-using GestaoEquipamentos.Modulos.Equipamentos.Dominio;
-using GestaoEquipamentos.Modulos.Equipamentos.Infraestrutura;
+using GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Dominio;
+using GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Infraestrutura;
 using Microsoft.AspNetCore.Mvc;
+
+namespace GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Apresentacao;
 
 public sealed class EquipamentoController : Controller
 {

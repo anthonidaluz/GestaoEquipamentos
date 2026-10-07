@@ -1,5 +1,5 @@
-﻿using GestaoEquipamentos.Compartilhado.Dominio;
-using GestaoEquipamentos.Modulos.Equipamentos.Dominio;
+﻿using GestaoDeEquipamentos.WebApp.Compartilhado.Dominio;
+using GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Dominio;
 
 namespace GestaoDeEquipamentos.WebApp.Modulos.Chamados.Dominio;
 

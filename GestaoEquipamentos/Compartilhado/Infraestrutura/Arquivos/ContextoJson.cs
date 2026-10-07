@@ -1,5 +1,6 @@
-﻿using GestaoDeEquipamentos.WebApp.Modulos.Chamados.Dominio;
-using GestaoEquipamentos.Modulos.Equipamentos.Dominio;
+﻿using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Dominio;
+using GestaoDeEquipamentos.WebApp.Modulos.Chamados.Dominio;
+using GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Dominio;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -121,7 +122,6 @@ public sealed class ContextoJson
     private bool PossuiDados()
     {
         return Fabricantes.Count > 0 &&
-            Equipamentos.Count > 0 &&
-            Chamados.Count > 0;
+            Equipamentos.Count > 0;
     }
 }

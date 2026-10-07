@@ -1,5 +1,5 @@
 using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura;
-using GestaoEquipamentos.Compartilhado.Apresentacao;
+using GestaoDeEquipamentos.WebApp.Compartilhado.Apresentacao;
 
 var builder = WebApplication.CreateBuilder(args);
 

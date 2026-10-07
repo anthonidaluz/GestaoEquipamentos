@@ -1,4 +1,5 @@
-﻿using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura.Arquivos;
+﻿using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Dominio;
+using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura.Arquivos;
 
 namespace GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Infraestrutura;
 

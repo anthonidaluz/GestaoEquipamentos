@@ -1,4 +1,6 @@
-﻿using GestaoEquipamentos.Compartilhado.Dominio;
+﻿using GestaoDeEquipamentos.WebApp.Compartilhado.Dominio;
+
+namespace GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Dominio;
 
 public sealed class Fabricante : EntidadeBase
 {

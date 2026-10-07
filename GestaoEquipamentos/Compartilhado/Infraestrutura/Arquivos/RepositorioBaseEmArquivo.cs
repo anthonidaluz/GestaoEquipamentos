@@ -1,5 +1,5 @@
 ﻿
-using GestaoEquipamentos.Compartilhado.Dominio;
+using GestaoDeEquipamentos.WebApp.Compartilhado.Dominio;
 
 namespace GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura.Arquivos;
 

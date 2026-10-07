@@ -1,7 +1,7 @@
 ﻿using GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura.Arquivos;
 using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Infraestrutura;
-using GestaoEquipamentos.Modulos.Chamados.Infraestrutura;
-using GestaoEquipamentos.Modulos.Equipamentos.Infraestrutura;
+using GestaoDeEquipamentos.WebApp.Modulos.Chamados.Infraestrutura;
+using GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Infraestrutura;
 
 namespace GestaoDeEquipamentos.WebApp.Compartilhado.Infraestrutura;
 

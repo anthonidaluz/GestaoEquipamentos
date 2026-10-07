@@ -1,8 +1,7 @@
-﻿namespace GestaoEquipamentos.Compartilhado.Dominio
+﻿namespace GestaoDeEquipamentos.WebApp.Compartilhado.Dominio;
+
+public abstract class EntidadeBase
 {
-    public abstract class EntidadeBase
-    {
-        public int Id { get; set; }
-        public abstract void Atualizar(EntidadeBase entidadeAtualizada);
-    }
+    public int Id { get; set; }
+    public abstract void Atualizar(EntidadeBase entidadeAtualizada);
 }

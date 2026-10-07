@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Dominio;
+using Microsoft.AspNetCore.Mvc;
 using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Infraestrutura;
 
 namespace GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Apresentacao;

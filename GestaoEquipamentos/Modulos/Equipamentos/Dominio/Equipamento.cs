@@ -1,35 +1,35 @@
-﻿using GestaoEquipamentos.Compartilhado.Dominio;
+﻿using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Dominio;
+using GestaoDeEquipamentos.WebApp.Compartilhado.Dominio;
 using System.Runtime.CompilerServices;
 
-namespace GestaoEquipamentos.Modulos.Equipamentos.Dominio
+namespace GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Dominio;
+
+public sealed class Equipamento : EntidadeBase
 {
-    public sealed class Equipamento : EntidadeBase
+    public string Nome { get; set; } = string.Empty;
+    public decimal PrecoAquisicao { get; set; }
+    public DateTime DataFabricacao { get; set; }
+    public Fabricante Fabricante { get; set; } = null!;
+
+    public Equipamento(string nome, decimal precoAquisicao, DateTime dataFabricacao, Fabricante fabricante)
     {
-        public string Nome { get; set; } = string.Empty;
-        public decimal PrecoAquisicao { get; set; }
-        public DateTime DataFabricacao { get; set; }
-        public Fabricante Fabricante { get; set; } = null!;
+        Nome = nome;
+        PrecoAquisicao = precoAquisicao;
+        DataFabricacao = dataFabricacao;
+        Fabricante = fabricante;
+    }
 
-        public Equipamento(string nome, decimal precoAquisicao, DateTime dataFabricacao, Fabricante fabricante)
-        {
-            Nome = nome;
-            PrecoAquisicao = precoAquisicao;
-            DataFabricacao = dataFabricacao;
-            Fabricante = fabricante;
-        }
+    public Equipamento()
+    {
+    }
 
-        public Equipamento()
-        {
-        }
+    public override void Atualizar(EntidadeBase entidadeAtualizada)
+    {
+        Equipamento equipamentoAtualizado = (Equipamento)entidadeAtualizada;
 
-        public override void Atualizar(EntidadeBase entidadeAtualizada)
-        {
-            Equipamento equipamentoAtualizado = (Equipamento)entidadeAtualizada;
-
-            Nome = equipamentoAtualizado.Nome;
-            PrecoAquisicao = equipamentoAtualizado.PrecoAquisicao;
-            DataFabricacao = equipamentoAtualizado.DataFabricacao;
-            Fabricante = equipamentoAtualizado.Fabricante;
-        }
+        Nome = equipamentoAtualizado.Nome;
+        PrecoAquisicao = equipamentoAtualizado.PrecoAquisicao;
+        DataFabricacao = equipamentoAtualizado.DataFabricacao;
+        Fabricante = equipamentoAtualizado.Fabricante;
     }
 }

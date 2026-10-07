@@ -1,6 +1,5 @@
 ﻿using GestaoDeEquipamentos.WebApp.Modulos.Fabricantes.Dominio;
 using GestaoDeEquipamentos.WebApp.Compartilhado.Dominio;
-using System.Runtime.CompilerServices;
 
 namespace GestaoDeEquipamentos.WebApp.Modulos.Equipamentos.Dominio;
 
